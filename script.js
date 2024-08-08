@@ -66,8 +66,8 @@ const weapons = [
     },
     {
         name: "kill monster",
-        "button text": ["Go to town square", "Go to town square", "Go to town square"],
-        "button functions": [goTown, goTown, easterEgg],
+        "button text": ["Go back to cave", "Go to town square", "Go to store"],
+        "button functions": [goCave, goTown, goStore],
         text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.'
       },
       {
@@ -81,12 +81,6 @@ const weapons = [
         "button text": ["REPLAY?", "REPLAY?", "REPLAY?"], 
         "button functions": [restart, restart, restart], 
         text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;" 
-      },
-      {
-        name: "easter egg",
-        "button text": ["2", "8", "Go to town square?"],
-        "button functions": [pickTwo, pickEight, goTown],
-        text: "You find a secret game. Pick a number above. Ten numbers will be randomly chosen between 0 and 10. If the number you choose matches one of the random numbers, you win!"
       }
     ];
     
